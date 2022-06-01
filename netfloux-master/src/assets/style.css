@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+/* Movie Backgrounds */
+.nextReleasesContainer {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background: #1414147e;
+    display: flex;
+    align-items: center;
+
+}
+
+.nextReleasesContainer>.videoContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(to bottom, rgb(27, 27, 27), rgb(0, 0, 0)); */
+    overflow: hidden;
+}
+
+.nextReleasesContainer>.videoContainer>video {
+    width: 100%;
+}
+
+.containerReleases {
+    width: 500px;
+    margin-left: 50px;
+}
+
+.containerReleases h1 {
+    color: #ffffff;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    position: relative;
+    margin-left: -3px;    
+}
+
+.containerReleases p {
+    color: #e9e9e9;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-shadow: #e9e9e9 0em 0em 0em;
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.containerReleases button {
+    border: none;
+    background: rgba(78, 78, 78, 0.562);
+    color: #e9e9e9;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.5s;
+    border-radius: 4px;
+}
+
+.containerReleases button:hover {
+    border: none;
+    cursor: pointer;
+    background: rgba(78, 78, 78, 0.2);
+    color: #fff;
+
+}
+
+.containerReleases button span {
+    padding-left: 10px;
+}
+
+#buttonPlay {
+    width: 130px;
+    height: 44px;
+    margin-right: 20px;
+    background-color: #fff;
+    color: black;
+
+}
+
+.izlemeyeDevam {
+    position: absolute;
+    top: 500px;
+    left: 50;
+}
+
+#buttonInfo {
+    width: 200px;
+    height: 44px;
+    font: bold;
+}
+
+@media only screen and (max-width: 900px) {
+    .nextReleasesContainer {
+        height: 50vh;
+    }
+}
+
+
+/* Movie Backgrounds */
+
+/* Navbar SecondItem */
+.secondItem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar-linear {
+    /* background-color: linear-gradient(to bottom, rgba(167, 167, 167, 0.13), rgba(0, 0, 0, 0.486)); */
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+    margin-top: 0 !important;
+    background: linear-gradient(to bottom, #000, #0003 70%, #0000);
+    transition: background .5s;
+
+}
+
+.nav-item {
+    font-size: 15px;
+    color: #e5e5e5;
+}
+
+/* Navbar SecondItem */
+
+
+/* Card css */
+
+
+.container-card {
+    background-color: #141414 !important;
+    display: flex;
+    /* width: 100%; */
+    margin-left: 50px;
+
+}
+
+.row {
+    margin-left: -15px;
+}
+
+.text-span {
+    color: #fff;
+    margin-left: 55px;
+    font-size: 25px;
+    margin-top: 60px !important;
+}
+
+img {
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+img {
+    pointer-events: none;
+}
+
+
+.originalCard {
+    padding: 0 !important;
+    width: 21rem !important;
+    height: 500px !important;
+    top: 0px;
+    border: none !important;
+    overflow: hidden;
+
+}
+
+.originalCard img {
+    object-fit: fill !important;
+    align-items: center;
+
+}
+
+.originalCard:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    border: none;
+    transition: 0.7s ease-in-out;
+}
+
+.film_info_original_card {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 370px;
+    height: 50px;
+    opacity: -1;
+}
+
+.title {
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.originalCard:hover .film_info_original_card {
+    bottom: 0%;
+    width: 370px;
+    height: 135px;
+    transition: 700ms all;
+    opacity: 1;
+    background: linear-gradient(to top, #000, #0003 70%, #0000);
+}
+
+.swiper-container-pointer-events {
+    touch-action: none !important;
+}
+
+.list-icon-left_original i {
+    padding: 20px;
+    border: 2px solid #fff !important;
+    border-radius: 50%;
+    color: #dbdbdb;
+    cursor: pointer;
+    transition: 300ms all;
+    margin-right: 35px !important;
+    margin-top: 15px;
+    background: transparent;
+}
+
+.list-icon-left_original i:hover {
+    background-color: #212529;
+}
+
+.movie_card {
+    padding: 0 !important;
+    width: 12rem;
+    margin-top: 10px;
+    top: 0px;
+    border: none !important;
+    overflow: hidden;
+    position: relative;
+
+    /* box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.search_movie_card {
+    padding: 0 !important;
+    width: 10rem;
+    margin-top: 10px;
+    top: 0px;
+    border: none !important;
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+
+.icerik {
+    padding-top: 150px;
+}
+
+.icerik a {
+    color: #fff;
+}
+
+.icerik a:hover {
+    color: red;
+}
+
+.movie_card:hover {
+    z-index: 3;
+    cursor: pointer;
+    border: none;
+    transition: 0.7s ease-in-out;
+}
+
+.swiper-container {
+    height: 400px !important;
+    padding-top: 20px !important;
+}
+
+.movie_card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.list-icon-left i {
+    margin-right: 0px !important;
+    font-size: 12px !important;
+    padding: 12px;
+    border: 2px solid #fff !important;
+    border-radius: 50%;
+    color: #dbdbdb;
+    cursor: pointer;
+    transition: transform 300ms all;
+    margin-right: 10px !important;
+    margin-top: 5px;
+    background-color: #212529;
+}
+
+.list-icon-left {
+    justify-content: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    top: 45% !important;
+}
+
+.film_info {
+    position: absolute;
+    transition: 700ms all;
+    bottom: -50%;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+
+
+}
+
+.movie_card:hover .film_info {
+    bottom: 0%;
+    transition: 700ms all;
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(to top, #000, #0003 70%, #0000);
+
+}
+
+.vue-neat-modal-wrapper {
+    z-index: 999 !important;
+}
+
+/* ToolTip css */
+.toolTip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.toolTip .toolTiptext {
+    visibility: hidden;
+    width: 122px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 110%;
+    margin-bottom: 5px;
+    left: 50%;
+    margin-left: -60px;
+    white-space: nowrap;
+
+}
+
+.toolTip .toolTiptext-sm {
+    visibility: hidden;
+    width: 85px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 110%;
+    margin-bottom: 5px;
+    left: 40%;
+    margin-left: -40px;
+    white-space: nowrap;
+}
+
+.tool-span {
+    font-size: 15px;
+}
+
+.toolTip .toolTiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+.toolTip .toolTiptext-sm::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+
+.toolTip:hover .toolTiptext {
+    visibility: visible;
+    transition: 300ms all;
+
+}
+
+.toolTip:hover .toolTiptext-sm {
+    visibility: visible;
+    transition: 300ms all;
+
+}
+
+.tool-span-sm {
+    font-size: 12px;
+    z-index: 1;
+    position: absolute;
+}
+
+/* ToolTip css */
+
+.play_button {
+    background-color: #E50914;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    right: 0px;
+    bottom: 0px;
+    font-size: 27px;
+    padding-left: 21px;
+    padding-top: 16px;
+    /* color: #FFFFFF; */
+    cursor: pointer;
+}
+
+
+/* Card sss */
+
+.container-fluid {
+    margin: 0px ! important;
+    padding: 0px ! important;
+
+}
+
+.header {
+    width: 100%;
+}
+
+/* top10css */
+
+.scrollbar {
+    height: 450px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-color: red yellow;
+}
+
+/* Card hover */
+.container-card {
+    display: flex;
+    margin-top: 50px;
+}
+
+.container-card-original {
+    display: flex;
+    margin-top: 50px;
+}
+
+.item {
+    position: relative;
+    display: block;
+    transition: 500ms;
+}
+
+
+
+.item:hover~.item,
+.item:focus~.item {
+    transform: translateX(25%);
+}
+
+
+
+/* yedek */
