@@ -115,3 +115,5 @@ Notre job run un script bash qui a pour but de cloner le contenu de notre object
 echo Current Date of Backup is: `date +"%Y-%m-%d %T"` >> ./minio-backup.log
 
 ```
+
+Vous pouvez tester le site sur l'url suivante: http://yanissloisel.com/
