@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: front
+  name: front
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: front-pod
+  template:
+    metadata:
+      labels:
+        app: front-pod
+    spec:
+      containers:
+      - name: front-pod
+        image: yanissdu33/nodejsstreamfront:front_2
+        ports:
+        - containerPort: 80
+      restartPolicy: Always

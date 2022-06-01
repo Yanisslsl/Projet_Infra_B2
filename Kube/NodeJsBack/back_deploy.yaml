@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: back
+  name: back
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: back-pod
+  template:
+    metadata:
+      labels:
+        app: back-pod
+    spec:
+      containers:
+      - name: back-pod
+        image: yanissdu33/nodejsstream:back_4
+        ports:
+        - containerPort: 3000
+      restartPolicy: Always
